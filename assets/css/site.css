@@ -14,6 +14,7 @@
   --rule-strong: rgba(241, 236, 225, 0.32);
   --studio: #c6883a;
   --live: #2b9aae;
+  --heading: #e5483a;
 
   --font: 'Open Sans', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
@@ -64,8 +65,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 /* ---------- Type helpers ---------- */
 
-.h-display { font-weight: var(--w-head); font-size: clamp(40px, 7vw, 104px); line-height: 1.02; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
-.h-page { font-weight: var(--w-head); font-size: clamp(38px, 6vw, 88px); line-height: 1.04; letter-spacing: -0.01em; margin: 0; max-width: 16ch; text-wrap: balance; }
+.h-display { color: var(--heading); font-weight: var(--w-head); font-size: clamp(40px, 7vw, 104px); line-height: 1.02; letter-spacing: -0.01em; margin: 0; text-wrap: balance; }
+.h-page { color: var(--heading); font-weight: var(--w-head); font-size: clamp(38px, 6vw, 88px); line-height: 1.04; letter-spacing: -0.01em; margin: 0; max-width: 16ch; text-wrap: balance; }
 .h-section { font-weight: var(--w-sub); font-size: clamp(26px, 3vw, 40px); line-height: 1.1; margin: 0; }
 .h-item { font-weight: var(--w-sub); font-size: clamp(20px, 1.8vw, 26px); line-height: 1.2; margin: 0; }
 .lede { font-size: clamp(19px, 1.6vw, 23px); line-height: 1.5; color: var(--text-muted); max-width: 46ch; margin: 20px 0 0; }
