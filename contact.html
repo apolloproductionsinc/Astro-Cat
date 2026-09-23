@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Astro Cat</title>
+<meta name="description" content="Start a job with Astro Cat. Los Angeles, travelling anywhere. hello@astrocat.tv">
+<meta name="theme-color" content="#15130f">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Open+Sans:wdth,wght@75,300;75,600;75,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="page-contact">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Astro Cat home">
+      <span class="brand-mark"><img data-mascot src="assets/img/mascot-kowa.jpg" alt="" width="40" height="40"></span>
+      <span class="brand-name">Astro Cat</span>
+      <span class="brand-crew" data-mascot-name>KOWA</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="nav-studio" href="studio.html">Studio</a>
+      <a class="nav-live" href="live.html">Live</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="label">Contact</p>
+      <h1 class="h-page">Let's work together.</h1>
+      <p class="lede">Tell us what you’re making and when. We’ll come back with questions, a crew and a plan.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-layout">
+      <div>
+        <h2 class="label">Start a job</h2>
+        <form class="form" data-mailto-form="hello@astrocat.tv" novalidate>
+          <div class="form-pair">
+            <div class="field"><label for="f-name">Name</label><input class="input" id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field"><label for="f-email">Email</label><input class="input" id="f-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <fieldset class="field">
+            <legend>Type of job</legend>
+            <div class="seg">
+              <input type="radio" name="type" id="t-studio" value="Studio"><label for="t-studio">STUDIO</label>
+              <input type="radio" name="type" id="t-live" value="Live"><label for="t-live">LIVE</label>
+              <input type="radio" name="type" id="t-unsure" value="Not sure" checked><label for="t-unsure">NOT SURE</label>
+            </div>
+          </fieldset>
+          <div class="form-pair">
+            <div class="field"><label for="f-dates">Dates</label><input class="input" id="f-dates" name="dates" type="text" placeholder="Shoot or show dates"></div>
+            <div class="field"><label for="f-budget">Budget</label><input class="input" id="f-budget" name="budget" type="text" placeholder="A range is fine"></div>
+          </div>
+          <div class="field"><label for="f-brief">The brief</label><textarea class="input" id="f-brief" name="brief" placeholder="What it is, who it’s for, and anything we should know" required></textarea></div>
+          <button class="btn" type="submit">Send →</button>
+          <p class="form-status" role="status"></p>
+        </form>
+      </div>
+
+      <aside aria-label="Direct contact">
+        <h2 class="label">Call sheet</h2>
+        <dl class="call-sheet">
+          <div><dt>Direct</dt><dd><a href="mailto:hello@astrocat.tv">hello@astrocat.tv</a><br><a href="tel:+19163759058">+1 (916) 375-9058</a></dd></div>
+          <div><dt>Based</dt><dd>Los Angeles, CA<br><span style="color:var(--text-muted)">Travelling anywhere</span></dd></div>
+          <div><dt>Local time</dt><dd><span class="tod-value" data-timecode>00:00:00:00</span></dd></div>
+          <div><dt>Social</dt><dd><a class="ig-link" style="margin-top:0" href="https://instagram.com/astrocat" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>@astrocat</a></dd></div>
+          <div><div class="ph">Map or studio photo</div></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Short FAQ: draft answers, edit or cut -->
+  <section class="section" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head"><h2 class="label" id="faq-title">Before you write</h2></div>
+      <div class="faq">
+        <details>
+          <summary class="h-item">Can one job use both Studio and Live?</summary>
+          <p>Yes. Plenty of shows need a live broadcast and a finished film out of the same day. Tick “Not sure” and tell us what you need to end up with.</p>
+        </details>
+        <details>
+          <summary class="h-item">Do you work outside Los Angeles?</summary>
+          <p>Yes. We’re based in LA and travel with the crew and kit the job needs.</p>
+        </details>
+        <details>
+          <summary class="h-item">What should go in the brief?</summary>
+          <p>What it is, who it’s for, where and when, and a budget range if you have one. Rough is fine. We’ll ask the rest.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-cta"><a href="contact.html">Let's work together</a></p>
+        <address class="contact-lines">
+          <a href="mailto:hello@astrocat.tv">hello@astrocat.tv</a><br>
+          <a href="tel:+19163759058">+1 (916) 375-9058</a><br>
+          Los Angeles, CA
+        </address>
+        <a class="ig-link" href="https://instagram.com/astrocat" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+          @astrocat
+        </a>
+      </div>
+      <div class="tod">
+        <div class="tod-value" data-timecode>00:00:00:00</div>
+        <p class="label">Local TOD · 24fps</p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="studio.html">Studio</a><a href="live.html">Live</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <p class="label">© Astro Cat</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live — Astro Cat</title>
+<meta name="description" content="Astro Cat Live: multicam broadcast, live events and streaming crews that go to air on time.">
+<meta name="theme-color" content="#15130f">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Open+Sans:wdth,wght@75,300;75,600;75,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body class="page-live">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Astro Cat home">
+      <span class="brand-mark"><img data-mascot src="assets/img/mascot-kowa.jpg" alt="" width="40" height="40"></span>
+      <span class="brand-name">Astro Cat</span>
+      <span class="brand-crew" data-mascot-name>KOWA</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav id="site-nav" class="nav" aria-label="Main">
+      <a class="nav-studio" href="studio.html">Studio</a>
+      <a class="nav-live" href="live.html" aria-current="page">Live</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="tag tag--live">Live</span>
+      <h1 class="h-page">Multicam that goes to air on time.</h1>
+      <p class="lede">Broadcast, live events and streams. We bring the crew, the cameras and the control room, and we’re on headsets until the last frame is out.</p>
+    </div>
+  </section>
+
+  <!-- Full-bleed truck / gallery still -->
+  <section class="bleed" aria-label="In the gallery">
+    <div class="ph">Truck / gallery still</div>
+    <div class="rec rec--live"><span class="rec-dot" aria-hidden="true"></span><span>LIVE</span><span data-timecode>00:00:00:00</span></div>
+  </section>
+
+  <section class="section" aria-labelledby="run-title">
+    <div class="wrap">
+      <div class="section-head"><h2 class="label" id="run-title">What we run</h2></div>
+      <ol class="rows">
+        <li class="row"><span class="row-num">01</span><h3 class="h-item">Multicam broadcast</h3><p>Studio and remote shows for networks, cut live and delivered to spec.</p></li>
+        <li class="row"><span class="row-num">02</span><h3 class="h-item">Live events</h3><p>Concerts, conferences and launches: IMAG, record and program feeds from one crew.</p></li>
+        <li class="row"><span class="row-num">03</span><h3 class="h-item">Streaming &amp; RF</h3><p>Encoding, redundancy and wireless cameras, so the signal gets out wherever the show is.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- The one dark band on the page: it carries the numbers. Replace TBC with real specs. -->
+  <section class="spec-band" aria-labelledby="spec-title">
+    <div class="wrap">
+      <h2 class="label" id="spec-title">Technical spec</h2>
+      <dl class="spec-grid">
+        <div class="spec-row"><dt>CAMERAS</dt><dd>TBC</dd></div>
+        <div class="spec-row"><dt>SWITCHER</dt><dd>TBC</dd></div>
+        <div class="spec-row"><dt>COMMS</dt><dd>TBC</dd></div>
+        <div class="spec-row"><dt>TRANSMISSION</dt><dd>TBC</dd></div>
+        <div class="spec-row"><dt>AUDIO</dt><dd>TBC</dd></div>
+        <div class="spec-row"><dt>TRUCKS</dt><dd>TBC</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="live-work-title">
+    <div class="wrap">
+      <div class="section-head"><h2 class="h-section" id="live-work-title">Live work</h2><span class="count">9 SHOWS</span></div>
+      <div class="chips chips--live" data-filter-for="#live-grid" role="group" aria-label="Filter Live work">
+        <button class="chip" type="button" data-filter="All" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="Broadcast" aria-pressed="false">Broadcast</button>
+        <button class="chip" type="button" data-filter="Events" aria-pressed="false">Events</button>
+        <button class="chip" type="button" data-filter="Streaming" aria-pressed="false">Streaming</button>
+      </div>
+      <div class="work-grid" id="live-grid">
+      <a class="work-card" data-tags="Broadcast">
+        <div class="ph">Still</div>
+        <span class="work-title">Show title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Broadcast</span>
+      </a>
+      <a class="work-card" data-tags="Events">
+        <div class="ph">Still</div>
+        <span class="work-title">Event title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Live event</span>
+      </a>
+      <a class="work-card" data-tags="Streaming">
+        <div class="ph">Still</div>
+        <span class="work-title">Stream title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Streaming</span>
+      </a>
+      <a class="work-card" data-tags="Broadcast">
+        <div class="ph">Still</div>
+        <span class="work-title">Show title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Broadcast</span>
+      </a>
+      <a class="work-card" data-tags="Events">
+        <div class="ph">Still</div>
+        <span class="work-title">Event title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Live event</span>
+      </a>
+      <a class="work-card" data-tags="Broadcast">
+        <div class="ph">Still</div>
+        <span class="work-title">Show title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Broadcast</span>
+      </a>
+      <a class="work-card" data-tags="Streaming" data-more-hidden hidden>
+        <div class="ph">Still</div>
+        <span class="work-title">Stream title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Streaming</span>
+      </a>
+      <a class="work-card" data-tags="Events" data-more-hidden hidden>
+        <div class="ph">Still</div>
+        <span class="work-title">Event title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Live event</span>
+      </a>
+      <a class="work-card" data-tags="Broadcast" data-more-hidden hidden>
+        <div class="ph">Still</div>
+        <span class="work-title">Show title</span>
+        <span class="work-kind"><span class="dot dot--live"></span>Broadcast</span>
+      </a>
+      </div>
+      <div class="grid-foot"><button class="btn btn--live" type="button" data-load-more="#live-grid" data-step="6">Load more</button></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="networks-title">
+    <div class="wrap">
+      <h2 class="label" id="networks-title">Networks we’ve run for</h2>
+      <div class="logo-row">
+        <span class="logo-slot">NETWORK</span><span class="logo-slot">NETWORK</span><span class="logo-slot">NETWORK</span><span class="logo-slot">NETWORK</span><span class="logo-slot">NETWORK</span><span class="logo-slot">NETWORK</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-cta"><a href="contact.html">Let's work together</a></p>
+        <address class="contact-lines">
+          <a href="mailto:hello@astrocat.tv">hello@astrocat.tv</a><br>
+          <a href="tel:+19163759058">+1 (916) 375-9058</a><br>
+          Los Angeles, CA
+        </address>
+        <a class="ig-link" href="https://instagram.com/astrocat" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+          @astrocat
+        </a>
+      </div>
+      <div class="tod">
+        <div class="tod-value" data-timecode>00:00:00:00</div>
+        <p class="label">Local TOD · 24fps</p>
+      </div>
+    </div>
+    <div class="footer-base">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="studio.html">Studio</a><a href="live.html">Live</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <p class="label">© Astro Cat</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
